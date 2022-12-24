@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>linear gradient</title>
+    <style>
+        .box{
+            height: 100px;
+            margin-bottom: 20px;
+        }
+        .grad1{
+            background-image: linear-gradient(red, orange, yellow, green, blue);
+        }
+
+        .grad2{
+            background: linear-gradient(to right, red, orange, yellow, green, blue);
+        }
+        .grad3{
+            background: linear-gradient(135deg, red, orange, yellow, green, blue);
+        }
+        .grad4{
+            background: linear-gradient(to right, red 50%, orange 60%, yellow 70%, green, blue, purple 90%);
+        }
+
+        .w-50{
+            width: 50%;
+            background-color: red;
+        }
+
+        .grad5{
+            background: linear-gradient(135deg,red 50%, yellow 50%, yellow 70%, green 70%);
+        }
+
+        .grad6{
+            background: linear-gradient(to bottom, rgba(0,0,255,0), rgb(255, 255, 255)), url('./images/city.jpg');
+        }
+
+        .grad7{
+            width: 200px;
+            height: 200px;
+            background: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%), 
+	linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%), 
+	linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
+        }
+
+        .grad8{
+            background: linear-gradient(to right,rgba(255, 192, 203, 0.496) 50%,rgba(255, 255, 0, 0.496) 50%),linear-gradient(pink 50%,yellow 50%);
+            background-size: 25px 25px;
+            background-repeat: repeat;
+        }
+
+        .grad9{
+            background: radial-gradient(circle at 80% 80px,purple, yellow 25%, red 100%);
+        }
+
+        .grad10{
+            background: repeating-radial-gradient(circle, deeppink, orchid 8%, hotpink 16%, deeppink 25%);
+        }
+
+        h1{
+            color: transparent;
+           background: linear-gradient(135deg, rgb(250, 58, 160), rgb(72, 197, 255)50%, rgb(136, 64, 250)60%);
+           background-clip: text;
+           -webkit-background-clip: text;
+           font-size: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box grad1">grad1</div>
+    <div class="box grad2">grad2</div>
+    <div class="box grad3">grad3</div>
+    <div class="box grad4">grad4</div>
+    <div class="box grad5">grad5</div>
+    <div class="box grad6">grad6</div>
+    <div class="box grad7">grad7</div>
+    <div class="box grad8">grad8</div>
+    <div class="box grad9">grad9</div>
+    <div class="box grad10">grad10</div>
+
+    <h1>Hello World</h1>
+</body>
+</html>
