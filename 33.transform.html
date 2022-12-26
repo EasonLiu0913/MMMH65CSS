@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transform</title>
+
+    <style>
+        .hover-wrap{
+            width: 200px;
+            /* border: 1px solid green; */
+        }
+        .box{
+            width: 200px;
+            height: 200px;
+            /* background-color: blueviolet; */
+            border: 1px solid red;
+            transition: 1s; 
+            transform-origin:0% 0%; 
+        }
+
+        .hover-wrap:hover .translateX{
+            transform: translateX(200px);
+        }
+
+        .rotate:hover{
+            /* transform-origin:0% 0%; */
+            transform: rotate(720deg);
+        }
+        .scale:hover{
+            transform:  scale(2) ;
+        }
+
+        .skewX:hover{
+            transform: skewX(-30deg);
+        }
+
+        .test{
+            transform: matrix(1,0,0,1,0,0);
+        }
+    </style>
+</head>
+<body>
+    <div class="hover-wrap">
+        <div class="box translateX">translateX</div>
+    </div>
+
+
+    <div class="box rotate">rotate</div>
+    <div class="box scale">scale</div>
+    <div class="box skewX">skewX</div>
+
+    <!-- <div class="box test">test</div> -->
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cube</title>
+
+    <style>
+        body{
+            margin: 200px;
+        }
+        .camera{
+            width: 200px;
+            height: 200px;
+            perspective: 800px;
+            perspective-origin: 50% 50%;
+        }
+
+        .cube{
+            transform-style: preserve-3d;
+            
+
+            animation: rotateY 5s linear infinite;
+        }
+
+        .box{
+            width: 200px;
+            height: 200px;
+            position: absolute;
+        }
+
+        .left{
+            background-color: #faf;
+            transform: rotateY(-90deg) translateZ(150px);
+        }
+        .right{
+            background-color: #faa;
+            transform: rotateY(90deg) translateZ(150px);
+        }
+        .top{
+            background-color: #aff;
+            transform: rotateX(90deg) translateZ(150px);
+        }
+        .bottom{
+            background-color: #aaf;
+            transform: rotateX(-90deg) translateZ(150px);
+        }
+
+        .back{
+            background-color: #ffa;
+            transform: rotateY(180deg) translateZ(150px);
+        }
+        .front{
+            background-color: #afa;
+            transform: translateZ(150px);
+        }
+
+
+        @keyframes rotateY {
+            from{
+                transform: rotate3d( 1, 1, 1   ,  0);
+            }
+
+            to{
+                transform: rotate3d( 1, 1,  1,     360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="camera">
+
+
+        <div class="cube">
+            <div class="box left">左</div>
+            <div class="box right">右</div>
+            <div class="box top">上</div>
+            <div class="box bottom">下</div>
+            <div class="box front">前</div>
+            <div class="box back">後</div>
+        </div>
+    </div>
+</body>
+</html>
