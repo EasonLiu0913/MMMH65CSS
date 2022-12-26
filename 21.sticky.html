@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sticky</title>
+
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .banner {
+            height: 90vh;
+            background: url('./images/background1.jpg');
+        }
+
+        nav {
+            width: 100%;
+            height: 200px;
+            background-color: tomato;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        section {
+            /* min-height: 1000px; */
+            /* clear: both; */
+        }
+
+        .section2 {
+            background-color: aqua;
+        }
+
+        .section3 {
+            clear: both;
+        }
+
+        .left,
+        .right {
+            float: left;
+        }
+
+        .left {
+            width: 40%;
+        }
+
+        .left p {
+            margin-bottom: 100px;
+        }
+
+        .right {
+            position: sticky;
+            top: 200px;
+            z-index: 2;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="banner"></div>
+
+    <nav>
+        nav here
+    </nav>
+
+    <section>
+        <h2>網站內容...</h2>
+    </section>
+
+    <section class="section2">
+        <h2>section2</h2>
+
+        <div class="left">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, nesciunt iste ratione dolorem
+                laboriosam dolores, doloribus possimus voluptas animi ipsa recusandae delectus cumque cupiditate, fugiat
+                unde quod veritatis architecto dolorum!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, nesciunt iste ratione dolorem
+                laboriosam dolores, doloribus possimus voluptas animi ipsa recusandae delectus cumque cupiditate, fugiat
+                unde quod veritatis architecto dolorum!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, nesciunt iste ratione dolorem
+                laboriosam dolores, doloribus possimus voluptas animi ipsa recusandae delectus cumque cupiditate, fugiat
+                unde quod veritatis architecto dolorum!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, nesciunt iste ratione dolorem
+                laboriosam dolores, doloribus possimus voluptas animi ipsa recusandae delectus cumque cupiditate, fugiat
+                unde quod veritatis architecto dolorum!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, nesciunt iste ratione dolorem
+                laboriosam dolores, doloribus possimus voluptas animi ipsa recusandae delectus cumque cupiditate, fugiat
+                unde quod veritatis architecto dolorum!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, nesciunt iste ratione dolorem
+                laboriosam dolores, doloribus possimus voluptas animi ipsa recusandae delectus cumque cupiditate, fugiat
+                unde quod veritatis architecto dolorum!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, nesciunt iste ratione dolorem
+                laboriosam dolores, doloribus possimus voluptas animi ipsa recusandae delectus cumque cupiditate, fugiat
+                unde quod veritatis architecto dolorum!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, nesciunt iste ratione dolorem
+                laboriosam dolores, doloribus possimus voluptas animi ipsa recusandae delectus cumque cupiditate, fugiat
+                unde quod veritatis architecto dolorum!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, nesciunt iste ratione dolorem
+                laboriosam dolores, doloribus possimus voluptas animi ipsa recusandae delectus cumque cupiditate, fugiat
+                unde quod veritatis architecto dolorum!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, nesciunt iste ratione dolorem
+                laboriosam dolores, doloribus possimus voluptas animi ipsa recusandae delectus cumque cupiditate, fugiat
+                unde quod veritatis architecto dolorum!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, nesciunt iste ratione dolorem
+                laboriosam dolores, doloribus possimus voluptas animi ipsa recusandae delectus cumque cupiditate, fugiat
+                unde quod veritatis architecto dolorum!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, nesciunt iste ratione dolorem
+                laboriosam dolores, doloribus possimus voluptas animi ipsa recusandae delectus cumque cupiditate, fugiat
+                unde quod veritatis architecto dolorum!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, nesciunt iste ratione dolorem
+                laboriosam dolores, doloribus possimus voluptas animi ipsa recusandae delectus cumque cupiditate, fugiat
+                unde quod veritatis architecto dolorum!</p>
+        </div>
+
+        <div class="right">
+            <h2>訂單細節...</h2>
+        </div>
+    </section>
+
+    <section class="section3">
+        <h2>Section3</h2>
+    </section>
+    <section>
+        <h2>Section4</h2>
+    </section>
+</body>
+
+</html>

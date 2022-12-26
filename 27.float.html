@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>float</title>
+    <style>
+        body {
+            font-size: 3rem;
+        }
+
+        header {
+            background-color: #ccc;
+        }
+
+        .wrap {
+            background-color: rgb(85, 86, 0);
+        }
+
+        .menu {
+            height: 200px;
+            background-color: rgb(222, 184, 135);
+            float: left;
+            width: 40%;
+        }
+
+        .content {
+            width: 60%;
+            float: left;
+            height: 300px;
+            background-color: cornflowerblue;
+        }
+
+        .clear {
+            clear: both;
+        }
+
+        footer {
+            background-color: crimson;
+            /* height: 300px; */
+            /* clear: both; */
+        }
+
+
+
+
+        .price::before {
+            content: '$';
+        }
+
+        .price::after {
+            content: '元';
+        }
+
+        .clearfix {
+            clear: both;
+        }
+
+        .clearfix::after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+
+        .star {
+            position: relative;
+        }
+
+        .star::before {
+            content: '';
+            display: block;
+            width: 19px;
+            height: 19px;
+            background: url('./images/star.png');
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="clearfix">header</header>
+
+    <div class="wrap clearfix">
+        <div class="menu star">menu</div>
+        <div class="content">content</div>
+
+
+        <!-- after -->
+
+    </div>
+
+    <!-- <div class="clear"></div> -->
+
+    <footer class="clearfix star">
+        <!--  -->
+        footer
+    </footer>
+
+
+
+    <!-- before -->
+    <!-- <p class="price"> -->
+    <!-- <before> -->
+    <!-- 清晰快樂指定此時只需我們公斤感興趣離開輸出工程攻擊，我現在某種失望無疑另外，環節伺服器一場你好手術允許商務奧客，超市分析不停按鈕搜尋放下套件金融法規因而我也，最後藍色看看那裡黃金光臨本網羅東追求，教育化工，小組靈魂清楚一口氣臨床電信國際這就是土地市政府成。 -->
+
+    <!-- <after> -->
+    <!-- </p> -->
+
+</body>
+
+</html>

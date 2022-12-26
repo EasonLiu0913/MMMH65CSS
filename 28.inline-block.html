@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inline block</title>
+
+    <style>
+        .wrap{
+            font-size: 0;
+        }
+
+        .box {
+            font-size: 16px;
+            width: 200px;
+            height: 200px;
+            display: inline-block;
+            /* vertical-align: top; */
+            /* margin: 0;
+            padding: 0;
+            box-sizing: border-box; */
+           writing-mode:vertical-lr;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        .box:nth-child(1) {
+            background-color: rgba(255, 170, 255, 0.408);
+        }
+
+        .box:nth-child(2) {
+            background-color: rgb(103, 222, 198);
+        }
+
+        .box:nth-child(3) {
+            background-color: #afa;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="box">Intro....</div> 
+        <div class="box">百度熱線也是，計算。</div>
+        <div class="box">box3</div>
+    </div>
+    <!-- <div class="wrap">
+        <div class="box">box1</div>
+        <div class="box">box2</div>
+        <div class="box">box3</div>
+    </div> -->
+</body>
+
+</html>

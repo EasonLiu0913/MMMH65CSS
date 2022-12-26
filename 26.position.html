@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>position</title>
+
+        <style>
+            body{
+                margin: 40px;
+                font-size: 3rem;
+                line-height: 2;
+            }
+            .wrap{
+                width: 800px;
+                height: 400px;
+                background-color: #ccc;
+                padding: 50px;
+                position: relative;
+                /* top: 100px;
+                left: 100px; */
+            }
+
+            .wrap2{
+                width: 400px;
+                height: 320px;
+                background-color: blanchedalmond;
+                
+            }
+
+            .box{
+                /* width: 200px;
+                height: 200px; */
+                background-color: rgb(185, 244, 137);
+                position: absolute;
+                /* width: 90%; */
+                top: 50px;
+                /* left: 50px; */
+                right: 50px;
+                bottom: 0;
+            }
+
+            .box2{
+                /* width: 200px; */
+                /* height: 100px; */
+                background-color: #faf;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="wrap">
+            1234567
+            <div class="wrap2">
+                <div class="box">box1</div>
+                <div class="box2">box2</div>
+            </div>
+        </div>
+    </body>
+</html>
