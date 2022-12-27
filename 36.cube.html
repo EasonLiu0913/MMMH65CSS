@@ -31,39 +31,39 @@
         }
 
         .left{
-            background-color: #faf;
+            background-color: rgba(255, 170, 255, 0.543);
             transform: rotateY(-90deg) translateZ(150px);
         }
         .right{
-            background-color: #faa;
+            background-color: rgba(255, 170, 170, 0.487);
             transform: rotateY(90deg) translateZ(150px);
         }
         .top{
-            background-color: #aff;
+            background-color: rgba(170, 255, 255, 0.532);
             transform: rotateX(90deg) translateZ(150px);
         }
         .bottom{
-            background-color: #aaf;
+            background-color: rgba(170, 170, 255, 0.491);
             transform: rotateX(-90deg) translateZ(150px);
         }
 
         .back{
-            background-color: #ffa;
+            background-color: rgba(255, 255, 170, 0.514);
             transform: rotateY(180deg) translateZ(150px);
         }
         .front{
-            background-color: #afa;
+            background-color: rgba(170, 255, 170, 0.511);
             transform: translateZ(150px);
         }
 
 
         @keyframes rotateY {
             from{
-                transform: rotate3d( 1, 1, 1, 0);
+                transform: rotate3d( 0, 1, 0, 0);
             }
 
             to{
-                transform: rotate3d( 1, 1, 1, 360deg);
+                transform: rotate3d( 0, 1, 0, 360deg);
             }
         }
     </style>

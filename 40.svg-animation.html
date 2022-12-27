@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>svg</title>
+    <style>
+        .tick{
+            stroke-dasharray: 310px;
+            stroke-dashoffset: 310px;
+
+            animation: tick-ani linear 1s both 2s;
+        }
+
+        @keyframes tick-ani {
+            0%{
+                stroke-dashoffset: 310px;
+            }
+
+            100%{
+                stroke-dashoffset: 0px;
+            }
+        }
+
+        .circle{
+            stroke-dasharray: 1194px;
+            stroke-dashoffset: 1194px;
+
+            animation: circle-ani linear 2s both;
+        }
+
+        @keyframes circle-ani {
+            0%{
+                stroke-dashoffset: 1194px;
+            }
+
+            100%{
+                stroke-dashoffset: 0px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <svg width="400" height="400">
+        <circle class="circle" cx="200" cy="200" r="190" stroke="green" stroke-width="10" fill="transparent" transform="rotate(-90 200 200)" stroke-linecap="round"/>   
+
+
+        <polyline class="tick" points="88,214 173,284 304,138" stroke="green" stroke-width="20" fill="transparent" stroke-linecap="round" stroke-linejoin="round" />
+    </svg>
+
+</body>
+</html>
