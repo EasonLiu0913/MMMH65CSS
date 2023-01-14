@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>variable</title>
+    <style>
+        :root {
+            --cellwidth: 200px;
+            --primary-color: rgb(86, 238, 238);
+        }
+
+        .box{
+            width: var(--cellwidth);
+            height: var(--cellwidth);
+            background-color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+        .box2{
+            --cellwidth: 300px;
+            --primary-color: rgb(246, 173, 72);
+            width: var(--cellwidth);
+            height: var(--cellwidth);
+            /* background-color: var(--primary-color); */
+            border: 1px solid red;
+            
+        }
+
+       .box3{
+            width: 50px;
+            height: 50px;
+            background-color: var(--primary-color);
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+
+    <div class="box2">
+        <div class="box3"></div>
+    </div>
+</body>
+
+</html>
